@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --border-radius: 5px;
+}
+
+html {
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: Barlow Semi Condensed, sans-serif;
+  background-color: rgb(231, 238, 235);
+}
+
+body {
+  width: 100%;
+}
+
+.grid-box {
+  width: 1110px;
+  height: 570px;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 110px auto;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(122, 24, 166);
+  color: hsl(210, 46%, 95%);
+}
+
+.grid-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: rgb(68, 75, 76);
+  color: hsl(210, 46%, 95%);
+}
+
+.grid-item-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: rgb(255, 255, 255);
+}
+
+.grid-item-4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: rgb(9, 12, 25);
+  color: hsl(210, 46%, 95%);
+}
+
+.grid-item-5 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: left;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.grid-item {
+  border-radius: var(--border-radius);
+  padding: 30px;
+}
+
+.profile-box {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255,255,255, 0.2);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profession {
+  margin: 0;
+  opacity: 0.5;
+}
+
+.introduction {
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.25rem;
+  opacity: 0.7;
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  background-color: rgb(231, 238, 235);
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+
+  .main-flexbox {
+    justify-content: center;
+    margin-top: 0;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-box {
+    grid-gap: 0;
+  }
+
+  .grid-item {
+    width: 90%;
+    margin: 10px 5px;
+  }
+
+  .attribution {
+    font-size: 0.75rem;
+  }
+}
