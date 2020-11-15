@@ -2,6 +2,7 @@
 
 :root {
   --border-radius: 5px;
+  --box-shadow: 20px 10px 20px rgb(206, 209, 190);
 }
 
 html {
@@ -30,14 +31,14 @@ body {
 .grid-item-1 {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: rgb(122, 24, 166);
+  background-color: hsl(263, 55%, 52%);
   color: hsl(210, 46%, 95%);
 }
 
 .grid-item-2 {
   grid-column-start: 3;
   grid-column-end: 4;
-  background-color: rgb(68, 75, 76);
+  background-color: hsl(217, 19%, 35%);
   color: hsl(210, 46%, 95%);
 }
 
@@ -50,7 +51,7 @@ body {
 .grid-item-4 {
   grid-column-start: 2;
   grid-column-end: 4;
-  background-color: rgb(9, 12, 25);
+  background-color: hsl(219, 29%, 14%);
   color: hsl(210, 46%, 95%);
 }
 
@@ -66,6 +67,7 @@ body {
 
 .grid-item {
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   padding: 30px;
 }
 
